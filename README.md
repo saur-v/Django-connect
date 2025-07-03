@@ -5,10 +5,7 @@ A full-stack social media web application built with **Django REST Framework** f
 ---
 
 ## 🌍 Live Demo
-🔗 [Deployed Website](https://your-deployed-site-link.vercel.app)  
-🖥️ [Backend API (Render)](https://your-backend-api-link.onrender.com)
-
-> Replace the above links with your actual deployed URLs.
+🌐 [Website](https://django-connect-git-main-saur-vs-projects.vercel.app/)  
 
 ---
 
@@ -68,7 +65,7 @@ Django-Connect/
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/your-username/Django-Connect.git
+git clone https://github.com/saur-v/Django-Connect.git
 cd Django-Connect/Backend
 ```
 
@@ -100,25 +97,6 @@ python manage.py runserver
 
 ---
 
-## 🖼 Media Files (Render Setup)
-
-To persist profile pictures and post images on Render:
-
-- Enable **Persistent Disk** in your Render backend service
-- Set the media root in Django `settings.py`:
-```python
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-```
-
-- Update `urls.py`:
-```python
-from django.conf import settings
-from django.conf.urls.static import static
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-```
-
----
 
 ## 🧪 Frontend Setup (React)
 
@@ -133,8 +111,9 @@ npm install
 ```
 
 3. Setup `.env` file:
+For local development:
 ```
-VITE_API_URL=https://your-backend-api-link.onrender.com
+VITE_API_URL=http://localhost:8000
 ```
 
 4. Run dev server:
@@ -151,7 +130,6 @@ npm run dev
 - Build command: `pip install -r requirements.txt`
 - Start command: `gunicorn core.wsgi:application`
 - Add environment variable: `DJANGO_SECRET_KEY`, `ALLOWED_HOSTS`, etc.
-- Enable disk for media
 
 ### Frontend (Vercel)
 - Connect GitHub repo
@@ -159,14 +137,6 @@ npm run dev
 - Framework preset: `Vite`
 - Output directory: `dist`
 
----
-
-## 👤 Author
-
-Made with ❤️ by [Saurabh Chaudhary](https://www.linkedin.com/in/saurabh-chaudhary-a768a8241/)
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License.
