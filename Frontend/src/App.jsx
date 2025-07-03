@@ -12,6 +12,10 @@ import SearchUsers from './pages/SearchUsers';
 import Explore from './pages/Explore';
 import PublicRoute from './components/PublicRoute';
 
+
+console.log("VITE_API_URL:", import.meta.env.VITE_API_URL);
+
+
 function App() {
   return (
     <Router>
