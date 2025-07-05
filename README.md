@@ -5,7 +5,7 @@ A full-stack social media web application built with **Django REST Framework** f
 ---
 
 ## 🌍 Live Demo
-🌐 [Website](https://django-connect-git-main-saur-vs-projects.vercel.app/)  
+🌐 [Website](https://django-connect-3kiv4pvgu-saur-vs-projects.vercel.app/)  
 
 ---
 
